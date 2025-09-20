@@ -39,7 +39,7 @@ export default function Chat() {
 
   //input
   async function callGemini() {
-    const apiKey; // ⚠️ Hardcoded for testing only
+    const apiKey = import.meta.env.VITE_API_KEY;
 
     const req = 'You are AI mental health companion. 1.do sentiment analysis 2. reply in a supportive, motivating, therapist-like way (no diagnoses) according to the sentiment , reply, 1-3 follow-up questions, 1-2 micro-steps(optional), and crisis resources if risk is detected. The answer in direct humanly type way and give ans in points or para , dont use bold '
 
